@@ -25,7 +25,7 @@ import wrapperShared from './_wrapper_shared';
 
 // Use our custom connection function that won't need a synchronous DNS lookup
 function safeConnectionFunc() {
-  const args = net._normalizeConnectArgs(arguments);
+  const args = net._normalizeArgs(arguments);
   const options = args[0];
   const s = new net.Socket(args[0]);
   const newOptions = util._extend({}, options);

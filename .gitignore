@@ -11,3 +11,9 @@ npm-debug.log
 
 dist/
 *.tgz
+
+package.json
+
+package-lock.json
+
+package.json
