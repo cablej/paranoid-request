@@ -9,7 +9,6 @@ jshint-proper.xml
 core
 npm-debug.log
 
-dist/
 *.tgz
 
 package-lock.json
