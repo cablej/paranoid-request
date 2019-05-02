@@ -40,7 +40,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // THE SOFTWARE.
 
 function safeConnectionFunc() {
-  var args = _net2.default._normalizeArgs(arguments);
+  var normalizeArgs = _net2.default._normalizeArgs ? _net2.default._normalizeArgs : _net2.default._normalizeConnectArgs;
+  var args = normalizeArgs(arguments);
   var options = args[0];
   var s = new _net2.default.Socket(args[0]);
   var newOptions = _util2.default._extend({}, options);
